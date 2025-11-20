@@ -12,7 +12,7 @@ export default function RentalPage() {
                 <p className="text-xl text-[#666] max-w-[800px] mx-auto">{data.description}</p>
             </div>
 
-            <div className="mb-lg">
+            <div className="mb-lg flex flex-col gap-lg">
                 <Gallery images={data.images} />
             </div>
 

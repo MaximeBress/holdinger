@@ -2,8 +2,18 @@
   "rental": {
     "title": "Location Chalet Les Orres",
     "description": "Un chalet d'exception au cœur des Alpes françaises. Profitez d'un séjour inoubliable dans un cadre authentique et chaleureux.",
-    "features": ["12 Personnes", "5 Chambres", "Sauna & Jacuzzi", "Vue Panoramique", "Accès Pistes"],
-    "images": ["/images/chalet-ext.jpg", "/images/chalet-int.jpg", "/images/chalet-view.jpg"],
+    "features": [
+      "12 Personnes",
+      "5 Chambres",
+      "Sauna & Jacuzzi",
+      "Vue Panoramique",
+      "Accès Pistes"
+    ],
+    "images": [
+      "/images/exterieur/exterieur1.jpeg",
+      "/images/exterieur/exterieur2.jpeg",
+      "/images/exterieur/exterieur3.jpeg.avif"
+    ],
     "price": "À partir de 1500€ / semaine"
   },
   "sale": [
