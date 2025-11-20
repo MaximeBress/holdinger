@@ -1,66 +1,62 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Button from '@/components/ui/Button';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div>
+      <section className="h-[80vh] bg-[linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/images/hero-mountains.jpg')] bg-cover bg-center flex items-center justify-center text-center text-surface mb-lg">
+        <div className="px-sm">
+          <h1 className="text-[3.5rem] mb-sm text-surface drop-shadow-md">Holdinger</h1>
+          <p className="text-xl mb-md max-w-[600px] mx-auto drop-shadow-sm">Votre partenaire privilégié pour l'immobilier, la découverte et les travaux en montagne.</p>
+          <Button href="/contact" variant="primary">Nous Contacter</Button>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="container py-lg">
+        <h2 className="text-center text-3xl mb-md">Nos Activités</h2>
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-md mt-md">
+
+          {/* Location Chalet */}
+          <div className="bg-surface rounded-md overflow-hidden shadow-sm transition-transform duration-200 hover:-translate-y-1 flex flex-col">
+            <div className="h-[200px] bg-[#ddd] bg-cover bg-center" style={{ backgroundImage: 'url(/images/chalet-home.jpg)' }}></div>
+            <div className="p-md flex-1 flex flex-col">
+              <h3 className="mb-xs text-xl font-bold">Location Chalet</h3>
+              <p className="text-[#666] mb-md flex-1">Séjournez dans notre chalet d'exception aux Orres. Confort, vue panoramique et accès direct aux pistes.</p>
+              <Button href="/immobilier" variant="outline">Découvrir le Chalet</Button>
+            </div>
+          </div>
+
+          {/* Vente Immobilière */}
+          <div className="bg-surface rounded-md overflow-hidden shadow-sm transition-transform duration-200 hover:-translate-y-1 flex flex-col">
+            <div className="h-[200px] bg-[#ddd] bg-cover bg-center" style={{ backgroundImage: 'url(/images/vente-home.jpg)' }}></div>
+            <div className="p-md flex-1 flex flex-col">
+              <h3 className="mb-xs text-xl font-bold">Vente Immobilière</h3>
+              <p className="text-[#666] mb-md flex-1">Découvrez notre sélection de biens à la vente. Appartements, chalets et terrains dans les Hautes-Alpes.</p>
+              <Button href="/vente" variant="outline">Voir les Biens</Button>
+            </div>
+          </div>
+
+          {/* Découverte */}
+          <div className="bg-surface rounded-md overflow-hidden shadow-sm transition-transform duration-200 hover:-translate-y-1 flex flex-col">
+            <div className="h-[200px] bg-[#ddd] bg-cover bg-center" style={{ backgroundImage: 'url(/images/4x4-home.jpg)' }}></div>
+            <div className="p-md flex-1 flex flex-col">
+              <h3 className="mb-xs text-xl font-bold">Découverte 4x4 & Quad</h3>
+              <p className="text-[#666] mb-md flex-1">Explorez la montagne autrement. Randonnées guidées et safaris photo pour toute la famille.</p>
+              <Button href="/decouverte" variant="outline">L'Aventure</Button>
+            </div>
+          </div>
+
+          {/* Matériel BTP */}
+          <div className="bg-surface rounded-md overflow-hidden shadow-sm transition-transform duration-200 hover:-translate-y-1 flex flex-col">
+            <div className="h-[200px] bg-[#ddd] bg-cover bg-center" style={{ backgroundImage: 'url(/images/btp-home.jpg)' }}></div>
+            <div className="p-md flex-1 flex flex-col">
+              <h3 className="mb-xs text-xl font-bold">Location Matériel BTP</h3>
+              <p className="text-[#666] mb-md flex-1">Louez le matériel adapté à vos chantiers. Mini-pelles, chargeuses et outillage professionnel.</p>
+              <Button href="/materiel" variant="outline">Le Catalogue</Button>
+            </div>
+          </div>
+
         </div>
-      </main>
+      </section>
     </div>
   );
 }

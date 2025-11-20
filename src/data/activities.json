@@ -1,0 +1,61 @@
+{
+  "rental": {
+    "title": "Location Chalet Les Orres",
+    "description": "Un chalet d'exception au cœur des Alpes françaises. Profitez d'un séjour inoubliable dans un cadre authentique et chaleureux.",
+    "features": ["12 Personnes", "5 Chambres", "Sauna & Jacuzzi", "Vue Panoramique", "Accès Pistes"],
+    "images": ["/images/chalet-ext.jpg", "/images/chalet-int.jpg", "/images/chalet-view.jpg"],
+    "price": "À partir de 1500€ / semaine"
+  },
+  "sale": [
+    {
+      "id": "1",
+      "title": "Appartement Pied de Pistes",
+      "location": "Les Orres 1650",
+      "price": "250 000 €",
+      "specs": "T3 - 65m² - Balcon Sud",
+      "image": "/images/sale-1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Chalet Traditionnel",
+      "location": "Embrun",
+      "price": "580 000 €",
+      "specs": "140m² - Terrain 1000m²",
+      "image": "/images/sale-2.jpg"
+    }
+  ],
+  "discovery": {
+    "title": "Découverte 4x4 & Quad",
+    "description": "Partez à l'aventure sur les sentiers alpins. Découvrez la faune et la flore locales avec nos guides expérimentés.",
+    "activities": [
+      {
+        "name": "Randonnée Quad",
+        "duration": "2h - Demi-journée",
+        "level": "Tous niveaux",
+        "image": "/images/quad.jpg"
+      },
+      {
+        "name": "Safari 4x4",
+        "duration": "Journée complète",
+        "description": "Accédez aux sommets et observez les marmottes et chamois.",
+        "image": "/images/4x4.jpg"
+      }
+    ]
+  },
+  "btp": [
+    {
+      "id": "1",
+      "name": "Mini-Pelle 2.5T",
+      "usage": "Terrassement, Tranchées",
+      "specs": "Profondeur max: 2.8m",
+      "image": "/images/minipelle.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Chargeuse Compacte",
+      "usage": "Manutention, Déblaiement",
+      "specs": "Capacité: 800kg",
+      "image": "/images/chargeuse.jpg"
+    }
+  ]
+}
